@@ -1,0 +1,326 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white-100">
+    <header class="bg-gray-50 shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="assets/logo-header.png" >
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#product" class="text-gray-700 font-medium">Product</a>
+                <a href="#services" class="text-gray-700 font-medium">Services</a>
+                <a href="#contact" class="text-gray-700 font-medium">Contact us</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <button class="text-gray-700 hover:text-green-600">
+                  <img src="assets/search icon.png" class="h-4 w-4">
+                </button>
+                <button class="text-gray-700 hover:text-green-600">
+                    <img src="assets/basket-cart-icon-27.png" class="h-4 w-4">
+                </button>
+                <button class="px-2 py-2 text-green-700 border border-green-700 rounded-lg hover:bg-green-700 hover:text-white">Login</button>
+                <button class="px-2 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800">Register</button>
+            </div>
+            <button class="md:hidden text-gray-700" id="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+<!-- banner section -->
+    <section class="bg-gray-50">
+        <div class="container mx-auto px-4 py-16 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold justify-center text-gray-800">Freshness <span class="text-green-600">You Can <br> Count </span>On, Prices You’ll Love!</h2>
+            <p class="mt-4 text-gray-600 max-w-xl mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we've got you covered every day!</p>
+            <div class="mt-8 flex justify-center relative">
+                <img src="assets/hero-vegetables.png">
+            </div>
+        </div>
+    </section>
+
+<!-- card section -->
+    <section class="py-12 px-4 sm:px-8 lg:px-16">
+        <h2 class="text-2xl sm:text-3xl font-bold text-green-600 justify-start mb-8">Services</h2>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <div class="bg-gray-200 rounded-2xl p-6 text-center">
+            <div class="flex justify-center items-center mb-4">
+                <div class="h-20 w-20 bg-white rounded-full flex items-center justify-center shadow">
+              <img src="assets/service.png" class="h-16 w-16">
+                </div>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">24/7 Services</h3>
+            <p class="text-gray-600">Services that are available 24 hours a day, 7 days a week. The term  is often used in commerce and industry.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-gray-200 rounded-2xl  p-6 text-center">
+            <div class="flex justify-center items-center mb-4">
+                <div class="h-20 w-20 bg-white rounded-full flex items-center justify-center shadow">
+              <img src="assets/delivery.png" class="h-16 w-16">
+                </div>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Fast Delivery</h3>
+            <p class="text-gray-600">Fast delivery is when an order is fulfilled quickly after placed. It can also mean responding to a user's needs quickly.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-gray-200 rounded-2xl  p-6 text-center">
+            <div class="flex justify-center items-center mb-4">
+                <div class="h-20 w-20 bg-white rounded-full flex items-center justify-center shadow">
+              <img src="assets/healthy.png" class="h-16 w-16">
+                </div>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Healthy Products</h3>
+            <p class="text-gray-600">Healthy products are items that help manage bodily functions. This can include foods and other products.</p>
+          </div>
+        </div>
+      </section>
+
+<!-- popular product section -->
+
+<section class="bg-gray-200 px-4 py-12 sm:px-8 lg:px-16">
+    <div class="mx-auto">
+        <h2 class="text-2xl font-bold text-green-700 mb-6">Popular Products</h2>
+        
+        <div class="flex flex-col lg:flex-row gap-6">
+            <!-- Large Discount Card -->
+            <div class="bg-gradient-to-br from-green-300 to-green-600 p-6 rounded-xl text-white flex flex-col justify-between w-auto md:w-[420px] md:h-[400px]">
+                <h3 class="text-2xl font-bold">30% off</h3>
+                <p class="text-sm my-2">Discover a world of treats, toys, and <br>essentials handpicked for you.</p>
+                <button class="bg-white text-green-500 px-1 py-2 rounded-md font-semibold text-sm">Buy Now</button>
+                <div class="mt-auto flex justify-center">
+                    <img src="assets/vegetable-offer.png" class="w-[270px] object-cover">
+                </div>
+            </div>
+
+            <!-- Small Product Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 sm:px-8 lg:px-10">
+                <!-- Small Product Card -->
+                <div class="bg-white p-4 rounded-lg shadow w-[250px] h-[100px] flex items-center">
+                    <img src="assets/onion.png" class="mr-4">
+                    <div>
+                        <p class="text-lg font-semibold">Onion 1 KG</p>
+                        <p class="text-yellow-500">⭐ 4.5</p>
+                        <p class="text-gray-700 font-bold">$39.99</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-md w-[250px] h-[100px] flex items-center">
+                    <img src="assets/tomato.png" class="mr-4">
+                    <div>
+                        <p class="text-lg font-semibold">Tomato 500 g</p>
+                        <p class="text-yellow-500">⭐ 4.5</p>
+                        <p class="text-gray-700 font-bold">$39.99</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-md w-[250px] h-[100px] flex items-center">
+                    <img src="assets/potato.png" class="mr-4">
+                    <div>
+                        <p class="text-lg font-semibold">Potato 1 KG</p>
+                        <p class="text-yellow-500">⭐ 4.5</p>
+                        <p class="text-gray-700 font-bold">$39.99</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-md w-[250px] h-[100px] flex items-center">
+                    <img src="assets/onion.png" class="mr-4">
+                    <div>
+                        <p class="text-lg font-semibold">Onion 1 KG</p>
+                        <p class="text-yellow-500">⭐ 4.5</p>
+                        <p class="text-gray-700 font-bold">$39.99</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-md w-[250px] h-[100px] flex items-center">
+                    <img src="assets/tomato.png" class="mr-4">
+                    <div>
+                        <p class="text-lg font-semibold">Tomato 500 g</p>
+                        <p class="text-yellow-500">⭐ 4.5</p>
+                        <p class="text-gray-700 font-bold">$39.99</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-md w-[250px] h-[100px] flex items-center">
+                    <img src="assets/potato.png" class="mr-4">
+                    <div>
+                        <p class="text-lg font-semibold">Potato 1 KG</p>
+                        <p class="text-yellow-500">⭐ 4.5</p>
+                        <p class="text-gray-700 font-bold">$39.99</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-md w-[250px] h-[100px] flex items-center">
+                    <img src="assets/onion.png" class="mr-4">
+                    <div>
+                        <p class="text-lg font-semibold">Onion 1 KG</p>
+                        <p class="text-yellow-500">⭐ 4.5</p>
+                        <p class="text-gray-700 font-bold">$39.99</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-md w-[250px] h-[100px] flex items-center">
+                    <img src="assets/tomato.png" class="mr-4">
+                    <div>
+                        <p class="text-lg font-semibold">Tomato 500 g</p>
+                        <p class="text-yellow-500">⭐ 4.5</p>
+                        <p class="text-gray-700 font-bold">$39.99</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-md w-[250px] h-[100px] flex items-center">
+                    <img src="assets/potato.png" class="mr-4">
+                    <div>
+                        <p class="text-lg font-semibold">Potato 1 KG</p>
+                        <p class="text-yellow-500">⭐ 4.5</p>
+                        <p class="text-gray-700 font-bold">$39.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Arrival & Offer section -->
+<!-- <section class="mx-auto bg-white-100 px-12 py-20 sm:px-4 lg:px-16">
+<h2 class="text-green-600 font-bold text-xl md:text-2xl">Arrival & Offers</h2>
+<div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-20"> -->
+    <!-- Daawat Offer Card -->
+    <!-- <div class="bg-green-800 text-white rounded-lg p-8 flex flex-col md:flex-row items-center text-center md:text-left w-[635px] h-[320px] space-x-10 overflow-hidden">
+        <div class="flex flex-col items-center md:items-start">
+            <img src="assets/dawat-logo.png" class="w-40 mb-6">
+            <button class="bg-green-500 text-white px-4 py-2 rounded-lg mb-4">Cook Exotic Dishes</button>
+            <p class="text-lg font-semibold">UP TO <span class="text-3xl font-bold">20% OFF</span></p>
+        </div>
+        <img src="assets/dawat-mock-up.png" class="w-80 mt-4 md:mt-0 md:ml-4 mr-4 object-cover">
+    </div> -->
+    <!-- India Gate Offer Card -->
+    <!-- <div class="bg-blue-900 text-white rounded-lg p-20 flex flex-col md:flex-row items-center text-center md:text-left w-[550px] h-[320px] space-x-8">
+        <div class="flex flex-col items-center md:items-start">
+        <img src="assets/india-gate-logo.png" class="w-20 mb-4">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg mb-4">World’s No.1 Rice</button>
+        <p class="text-lg font-semibold">UP TO <span class="text-2xl font-bold">40% OFF</span></p>
+        </div>
+        <img src="assets/india-gate-mock-up.png" class="w-45 mt-4 md:mt-0 md:ml-4">
+    </div>
+</div>
+</section> -->
+
+<section class="bg-white-100 py-12 px-4 sm:px-8 lg:px-16">
+    <h2 class="text-2xl sm:text-3xl font-bold text-green-600 mb-8">Arrival & Offers</h2>
+    <div class="flex flex-col md:flex-row gap-6">
+      <!-- Green Card -->
+      <div class="bg-green-800 text-white rounded-2xl p-6 flex md:w-7/12 md:items-center space-y-4 md:space-y-0 md:space-x-6">
+        <!-- Left Section -->
+        <div class="flex flex-col items-center space-y-4">
+          <img src="assets/dawat-logo.png" class="h-25 w-auto">
+          <button class="bg-green-600 hover:bg-green-500 text-white font-semibold px-4 py-2 rounded-full">Cook Exotic Dishes</button>
+          <h3 class="text-xl font-bold">UP TO <span class="text-2xl">20% OFF</span></h3>
+        </div>
+        <!-- Right Section -->
+        <div>
+          <img src="assets/dawat-mock-up.png" class="h-55 w-auto rounded-lg">
+        </div>
+      </div>
+
+      <!-- Blue Card -->
+      <div class="bg-blue-800 text-white rounded-2xl px-6 flex md:w-5/12 md:items-center gap-x-18 space-y-4 md:space-y-0 md:space-x-25 md:gap-x-6">
+        <!-- Left Section -->
+        <div class="flex flex-col items-center space-y-4">
+          <img src="assets/india-gate-logo.png" class="h-30 w-auto">
+          <button class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-4 py-2 rounded-full">World's No.1 Rice</button>
+          <h3 class="text-xl font-bold">UP TO <span class="text-2xl">40% OFF</span></h3>
+        </div>
+        <!-- Right Section -->
+        <div>
+          <img src="assets/india-gate-mock-up.png" class="h-55 w-auto rounded-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Newsletter Section -->
+
+    <div class="relative bg-gray-200 px-6 py-10 md:py-14 md:px-12 rounded-xl max-w-4xl mx-auto -mb-30 z-10">
+        <div class="flex flex-col md:flex-row grid grid-cols-2 gap-2 items-center md:justify-between">
+    <img src="assets/vegetable-busket.png" class="w-40 md:w-56">
+    <div class="text-center md:text-left">
+        <h2 class="text-xl md:text-2xl font-bold">Get Grocery News!</h2>
+        <p class="text-gray-600 mt-2">Exclusive training tips, tricks, product deals, and more.</p>
+       
+        <div class="mt-4">
+            <input type="email" placeholder="Enter email..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+            <button class="w-40 bg-green-600 text-white font-semibold py-2 mt-2 rounded-lg">Subscribe</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+
+    <!-- <footer class="bg-green-600 text-white py-12">
+        <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 space-y-6 -gap-y-20 md:grid-cols-3 "> -->
+    
+        <!-- Left Section -->
+        <!-- <div class="md:w-1/3 py-16">
+            <h2 class="text-xl font-bold"></h2>
+            <img src="assets/logo-footer.png" alt="">
+            <p class="text-sm">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends.</p>
+        </div> -->
+
+        <!-- Center Links -->
+        <!-- <div class="md:w-4  flex flex-col space-y-2 py-16">
+            <a href="#">Product</a>
+            <a href="#">Services</a>
+            <a href="#" class="whitespace-nowrap">Contact us</a>
+        </div> -->
+
+        <!-- Right Section - Social Media -->
+        <!-- <div class="md:w-1/3 text-center py-20 md:text-right">
+            <p class="font-semibold">Follow Us</p>
+            <div class="flex justify-center md:justify-end space-x-4 mt-2">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-5 h-5"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="w-5 h-5"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="w-5 h-5"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="w-5 h-5"></a>
+            </div>
+        </div>
+    </div>
+</footer> -->
+
+
+  <!-- Footer Section -->
+  <footer class="bg-green-500 text-white py-10 mt-18 gap-1 md:gap-6">
+    <div class="max-w-7xl mx-auto px-4 space-y-6 sm:px-8 lg:px-16 grid grid-cols-1 sm:grid-cols-3 ">
+      <!-- Left Section -->
+      <div class="space-y-4 py-12">
+        <h3 class="text-2xl font-bold">nature's platter</h3>
+        <img src="assets/logo-footer.png" alt="">
+        <p class="text-gray-200">Discover a world of treats, toys, and essentials handpicked for your furry friends.</p>
+      </div>
+      <!-- Middle Section -->
+      <div class=" flex flex-col space-y-2  py-15 text-left ">
+        <a href="#" class="block">Product</a>
+        <a href="#" class="block">Services</a>
+        <a href="#" class="block">Contact us</a>
+      </div>
+      <!-- Right Section -->
+      <div class="md:w-1/3 text-center py-16 md:text-left">
+        <p class="font-semibold">Follow Us</p>
+        <div class="flex justify-center sm:justify-end space-x-4  mt-2">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-5 h-5"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="w-5 h-5"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="w-5 h-5"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="w-5 h-5"></a>
+      </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
