@@ -5,6 +5,20 @@
     <title>Nature's Platter</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
+<div class="relative flex overflow-hidden whitespace-nowrap">
+    <div class="flex space-x-4 animate-[marquee_10s_linear_infinite]">
+        Welcome to Nature's Platter, where we bring the bounty of nature to your table in the most delightful way possible.
+    </div>
+  </div><style>
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(100%);
+      }
+    }
+    </style>
 <body class="bg-white-100">
     <header class="bg-gray-50 shadow-md">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -33,14 +47,29 @@
             </button>
         </div>
     </header>
-
+    
 <!-- banner section -->
     <section class="bg-gray-50">
         <div class="container mx-auto px-4 py-16 text-center">
             <h2 class="text-3xl md:text-4xl font-bold justify-center text-gray-800">Freshness <span class="text-green-600">You Can <br> Count </span>On, Prices You’ll Love!</h2>
             <p class="mt-4 text-gray-600 max-w-xl mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we've got you covered every day!</p>
             <div class="mt-8 flex justify-center relative">
-                <img src="assets/hero-vegetables.png">
+                <img src="assets/hero-vegetables.png" class="animate-[float_3s_ease-in-out_infinite] w-full max-w-2xl"/>
+            </div>
+            
+            <style>
+            @keyframes float {
+              0% {
+                transform: translateY(0);
+              }
+              50% {
+                transform: translateY(-10px);
+              }
+              100% {
+                transform: translateY(0);
+              }
+            }
+            </style>>
             </div>
         </div>
     </section>
@@ -247,7 +276,7 @@
 
 <!-- Newsletter Section -->
 
-    <div class="relative bg-gray-200 px-6 py-10 md:py-14 md:px-12 rounded-xl max-w-lg md:max-w-3xl  mx-auto -mb-30 z-10">
+    <div class="relative bg-gray-200 px-6 py-10 md:py-8 md:px-12 rounded-xl max-w-lg md:max-w-3xl  mx-auto -mb-60 z-10">
         <div class="flex flex-col md:flex-row grid grid-cols-2 gap-2 items-center md:justify-between">
     <img src="assets/vegetable-busket.png" class="w-40 mx-auto mb-4 md:w-56">
     <div class="text-center md:text-left">
@@ -296,7 +325,7 @@
 
 
   <!-- Footer Section -->
-  <footer class="bg-green-500 text-white py-10 mt-18 gap-1 md:gap-6">
+  <footer class="bg-green-500 text-white py-20 mt-35 gap-1 md:gap-6">
     <div class="max-w-7xl mx-auto px-4 space-y-6 sm:px-8 lg:px-16 grid grid-cols-1 sm:grid-cols-3 ">
       <!-- Left Section -->
       <div class="space-y-4 py-12">
